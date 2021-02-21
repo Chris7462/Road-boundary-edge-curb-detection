@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 2.8.3)
 project(fast_curb_detection)
 
+set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 find_package(catkin REQUIRED COMPONENTS
   pcl_conversions
@@ -13,6 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
   grid_map_msgs
   autoware_msgs
   #velodyne_pointcloud
+  velodyne_pcl
 )
 
 catkin_package(CATKIN_DEPENDS)
@@ -33,7 +36,7 @@ find_package(catkin_simple REQUIRED)
 add_dependencies(main ${catkin_EXPORTED_TARGETS})
 
 include_directories(
-	include 
+	include
 	${catkin_INCLUDE_DIRS}${OpenCV_LIBRARIES}${PCL_INCLUDE_DIRS}
 )
 link_directories(${PCL_LIBRARY_DIRS})

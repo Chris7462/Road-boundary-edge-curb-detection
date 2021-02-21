@@ -7,11 +7,11 @@
 
 #include <array>
 #include <pcl/io/pcd_io.h>
-#include "../../velodyne-master/velodyne_pointcloud/include/velodyne_pointcloud/point_types.h"
+#include <velodyne_pcl/point_types.h>
 
 using namespace std;
 using namespace pcl;
-#define VPoint velodyne_pointcloud::PointXYZIR
+#define VPoint velodyne_pcl::PointXYZIRT
 
 //const int numGrid = 100;
 const int numGrid = 200;//100 150 200

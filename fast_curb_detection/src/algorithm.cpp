@@ -20,10 +20,9 @@
 #include <visualization_msgs/Marker.h>
 #include <visualization_msgs/MarkerArray.h>
 
-#define VPoint velodyne_pointcloud::PointXYZIR
+#define VPoint velodyne_pcl::PointXYZIRT
 #define PI 3.1415926
 #include <Eigen/Dense>
-#include "../../velodyne-master/velodyne_pointcloud/include/velodyne_pointcloud/point_types.h"
 
 using namespace std;
 using namespace Eigen;

@@ -17,7 +17,6 @@
 #include <pcl/filters/filter.h>
 #include <pcl/point_types.h>
 #include <Eigen/Dense>
-#include "../../velodyne-master/velodyne_pointcloud/include/velodyne_pointcloud/point_types.h"
 
 #include <sensor_msgs/point_cloud_conversion.h>
 #include <pthread.h>
@@ -83,7 +82,7 @@
 #include <opencv/highgui.h>
 #include <opencv2/core/version.hpp>
 
-#define VPoint velodyne_pointcloud::PointXYZIR
+#define VPoint velodyne_pcl::PointXYZIRT
 
 using namespace std;
 using namespace Eigen;
